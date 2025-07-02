@@ -59,7 +59,7 @@ export const createNote:CreateNote= async()=>{
     await ensureDir(rootDir)
    const {filePath,canceled} =await dialog.showSaveDialog({
         title:'New Note',
-        defaultPath:'${rootDir}/Unittile.md',
+        defaultPath:'${rootDir}/Untitle.md',
         buttonLabel:'Create Note',
         properties:['showOverwriteConfirmation'],
         showsTagField:false,
