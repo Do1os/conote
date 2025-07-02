@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #root {
+    @apply h-full bg-white/10 backdrop-blur-md;
+  }
+
+  html,
+  body {
+    @apply h-full select-none font-mono antialiased text-white overflow-hidden bg-transparent;
+  }
+
+  ::-webkit-scrollbar{
+    @apply w-2;
+
+  }
+
+  ::-webkit-scrollbar-thumb{
+    @apply bg-[#e6a1a1] rounded-md;
+  }
+
+  ::-webkit-scrollbar-track{
+    @apply bg-transparent;
+  }
+}
+
